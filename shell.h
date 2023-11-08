@@ -118,7 +118,7 @@ int find_builtin(info_t *);
 void find_cmd(info_t *);
 void fork_cmd(info_t *);
 
-/* shell_parser.c */
+/* sh_parser.c    active */
 int is_cmd(info_t *, char *);
 char *dup_chars(char *, int, int);
 char *find_path(info_t *, char *, char *);
@@ -126,39 +126,39 @@ char *find_path(info_t *, char *, char *);
 /* loophsh.c */
 int loophsh(char **);
 
-/* toem_errors.c */
+/* sh_errors.c      active */
 void _eputs(char *);
 int _eputchar(char);
 int _putfd(char c, int fd);
 int _putsfd(char *str, int fd);
 
-/* toem_string.c */
+/* sh_string.c      active */
 int _strlen(char *);
 int _strcmp(char *, char *);
 char *starts_with(const char *, const char *);
 char *_strcat(char *, char *);
 
-/* toem_string1.c */
+/* sh_string1.c     active  */
 char *_strcpy(char *, char *);
 char *_strdup(const char *);
 void _puts(char *);
 int _putchar(char);
 
-/* toem_exits.c */
+/* sh_exits.c     active  */
 char *_strncpy(char *, char *, int);
 char *_strncat(char *, char *, int);
 char *_strchr(char *, char);
 
-/* toem_tokenizer.c */
+/* sh_tokenizer.c     active  */
 char **strtow(char *, char *);
 char **strtow2(char *, char);
 
-/* toem_realloc.c */
+/* sh_realloc.c    active */
 char *_memset(char *, char, unsigned int);
-void ffree(char **);
+void ffree(char **)i;
 void *_realloc(void *, unsigned int, unsigned int);
 
-/* toem_memory.c */
+/* sh_memory.c      active */
 int bfree(void **);
 
 /* toem_atoi.c */
