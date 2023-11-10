@@ -101,7 +101,7 @@ size_t print_list_str(const list_t *h)
 
 /**
  * delete_node_at_index - deletes node.
- * @head: address of pointer to first node
+ * @head: This is the address pointer to first node.
  * @index: this is the index of node to be deleted.
  *
  * Return: 1 success, 0 failure

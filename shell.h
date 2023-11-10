@@ -155,7 +155,7 @@ char **strtow2(char *, char);
 
 /* sh_realloc.c    active */
 char *_memset(char *, char, unsigned int);
-void ffree(char **)i;
+void ffree(char **);
 void *_realloc(void *, unsigned int, unsigned int);
 
 /* sh_memory.c      active */
@@ -181,9 +181,9 @@ int _myhelp(info_t *);
 
 /* sh_builtin1.c      active */
 int _myhistory(info_t *);
-int unset_alias(info_t *info, char *str)
-int set_alias(info_t *info, char *str)
-int print_alias(list_t *node)
+int unset_alias(info_t *info, char *str);
+int set_alias(info_t *info, char *str);
+int print_alias(list_t *node);
 int _myalias(info_t *);
 
 /* sh_getline.c     active */
@@ -215,7 +215,7 @@ int read_history(info_t *info);
 int build_history_list(info_t *info, char *buf, int linecount);
 int renumber_history(info_t *info);
 
-/* toem_lists.c */
+/* sh_lists.c */
 list_t *add_node(list_t **, const char *, int);
 list_t *add_node_end(list_t **, const char *, int);
 size_t print_list_str(const list_t *);
