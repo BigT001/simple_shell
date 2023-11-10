@@ -161,54 +161,54 @@ void *_realloc(void *, unsigned int, unsigned int);
 /* sh_memory.c      active */
 int bfree(void **);
 
-/* toem_atoi.c */
+/* sh_atoi.c     active  */
 int interactive(info_t *);
 int is_delim(char, char *);
 int _isalpha(int);
 int _atoi(char *);
 
-/* toem_errors1.c */
+/* sh_errors1.c     active */
 int _erratoi(char *);
 void print_error(info_t *, char *);
 int print_d(int, int);
 char *convert_number(long int, int, int);
 void remove_comments(char *);
 
-/* toem_builtin.c */
+/* sh_builtin.c      active */
 int _myexit(info_t *);
 int _mycd(info_t *);
 int _myhelp(info_t *);
 
-/* shell_builtin1.c      active */
+/* sh_builtin1.c      active */
 int _myhistory(info_t *);
 int unset_alias(info_t *info, char *str)
 int set_alias(info_t *info, char *str)
 int print_alias(list_t *node)
 int _myalias(info_t *);
 
-/*toem_getline.c */
+/* sh_getline.c     active */
 ssize_t get_input(info_t *);
 int _getline(info_t *, char **, size_t *);
 void sigintHandler(int);
 
-/* toem_getinfo.c */
+/* sh_getinfo.c     active */
 void clear_info(info_t *);
 void set_info(info_t *, char **);
 void free_info(info_t *, int);
 
-/* toem_environ.c */
+/* sh_environ.c     active */
 char *_getenv(info_t *, const char *);
 int _myenv(info_t *);
 int _mysetenv(info_t *);
 int _myunsetenv(info_t *);
 int populate_env_list(info_t *);
 
-/* toem_getenv.c */
+/* sh_getenv.c      active */
 char **get_environ(info_t *);
 int _unsetenv(info_t *, char *);
 int _setenv(info_t *, char *, char *);
 
-/* toem_history.c */
+/* sh_history.c      active */
 char *get_history_file(info_t *info);
 int write_history(info_t *info);
 int read_history(info_t *info);
